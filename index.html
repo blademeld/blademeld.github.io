@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sangkeun Kim – Software Developer</title>
+<meta name="description" content="Portfolio of Sangkeun Kim, a software developer in Richmond Hill, Ontario, working with data visualization, maps and web APIs.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%97%BA%EF%B8%8F%3C/text%3E%3C/svg%3E">
+<style>
+:root{
+  --bg:#f2f6f8; --fg:#12263a; --muted:#4d6275; --line:#c9d6df; --panel:#e8eff3;
+  --accent:#16688a; --accent-fg:#ffffff; --contour:#b7cbd8;
+  --serif:Charter,"Iowan Old Style","Palatino Linotype",Georgia,serif;
+  --sans:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#0e1a25; --fg:#e3edf3; --muted:#9db2c1; --line:#27394a; --panel:#152433;
+    --accent:#6cc3df; --accent-fg:#0e1a25; --contour:#1f3547;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0e1a25; --fg:#e3edf3; --muted:#9db2c1; --line:#27394a; --panel:#152433;
+  --accent:#6cc3df; --accent-fg:#0e1a25; --contour:#1f3547;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--fg);font:1.0625rem/1.65 var(--sans);-webkit-text-size-adjust:100%}
+a{color:var(--accent);text-underline-offset:3px}
+a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:3px}
+.wrap{max-width:46rem;margin:0 auto;padding:0 1.25rem}
+header.top{position:relative;overflow:hidden;border-bottom:1px solid var(--line)}
+header.top svg{position:absolute;right:-6rem;top:-3rem;width:36rem;max-width:none;height:auto;pointer-events:none}
+.hero{position:relative;padding:4.5rem 0 3.5rem}
+nav{display:flex;flex-wrap:wrap;gap:.25rem 1.4rem;margin-bottom:3.5rem;font-size:.95rem}
+nav a{color:var(--muted);text-decoration:none}
+nav a:hover{color:var(--accent);text-decoration:underline}
+h1{font:700 clamp(2.6rem,8vw,4.2rem)/1.05 var(--serif);letter-spacing:-.02em;margin:0 0 1rem}
+.lede{font:1.35rem/1.45 var(--serif);max-width:32rem;margin:0 0 1.75rem}
+.links{display:flex;flex-wrap:wrap;gap:.6rem}
+.btn{display:inline-block;padding:.55rem 1.05rem;border:1px solid var(--accent);border-radius:6px;text-decoration:none;font-weight:600;font-size:.95rem}
+.btn.primary{background:var(--accent);color:var(--accent-fg)}
+.btn:hover{filter:brightness(1.08)}
+section{padding:3.25rem 0;border-bottom:1px solid var(--line)}
+h2{font:700 1.7rem/1.2 var(--serif);margin:0 0 1.25rem}
+p{margin:0 0 1rem;max-width:40rem}
+.muted{color:var(--muted)}
+.proj{display:grid;gap:.35rem;padding:1.25rem 0;border-top:1px solid var(--line)}
+.proj:first-of-type{border-top:0;padding-top:0}
+.proj h3{font:700 1.2rem/1.3 var(--serif);margin:0}
+.proj p{margin:0}
+.tags{display:flex;flex-wrap:wrap;gap:.4rem;margin:.4rem 0 0;padding:0;list-style:none}
+.tags li{font-size:.85rem;background:var(--panel);border:1px solid var(--line);border-radius:4px;padding:.1rem .55rem}
+.job{display:grid;grid-template-columns:9.5rem 1fr;gap:.25rem 1.5rem;padding:1.15rem 0;border-top:1px solid var(--line)}
+.job:first-of-type{border-top:0;padding-top:0}
+.job .when{color:var(--muted);font-size:.95rem}
+.job h3{font:700 1.15rem/1.35 var(--serif);margin:0}
+.job ul{margin:.5rem 0 0;padding-left:1.15rem}
+.job li{margin:.2rem 0;max-width:38rem}
+dl.skills{display:grid;grid-template-columns:11rem 1fr;gap:.7rem 1.5rem;margin:0}
+dl.skills dt{font-weight:700}
+dl.skills dd{margin:0}
+footer{padding:2.5rem 0 4rem;color:var(--muted);font-size:.95rem}
+@media (max-width:40rem){
+  header.top svg{width:26rem;right:-9rem;opacity:.7}
+  .job{grid-template-columns:1fr}
+  dl.skills{grid-template-columns:1fr;gap:.1rem}
+  dl.skills dd{margin-bottom:.8rem}
+}
+</style>
+</head>
+<body>
+<header class="top">
+  <svg viewBox="0 0 600 600" fill="none" stroke="var(--contour)" stroke-width="1.6" aria-hidden="true">
+    <ellipse cx="300" cy="300" rx="285" ry="215" transform="rotate(-18 300 300)"/>
+    <ellipse cx="310" cy="292" rx="245" ry="180" transform="rotate(-12 300 300)"/>
+    <ellipse cx="322" cy="285" rx="205" ry="148" transform="rotate(-6 300 300)"/>
+    <ellipse cx="335" cy="280" rx="165" ry="116" transform="rotate(2 300 300)"/>
+    <ellipse cx="346" cy="278" rx="125" ry="86" transform="rotate(10 300 300)"/>
+    <ellipse cx="356" cy="278" rx="86" ry="56" transform="rotate(18 300 300)"/>
+    <ellipse cx="364" cy="280" rx="48" ry="28" transform="rotate(26 300 300)"/>
+  </svg>
+  <div class="wrap hero">
+    <nav aria-label="Sections">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <h1>Sangkeun Kim</h1>
+    <p class="lede">Software developer who builds data visualizations, interactive maps and the web APIs behind them.</p>
+    <div class="links">
+      <a class="btn primary" href="mailto:arbiternal@gmail.com">Email me</a>
+      <a class="btn" href="https://github.com/blademeld">GitHub</a>
+      <a class="btn" href="https://linkedin.com/in/sangkeun-kim">LinkedIn</a>
+      <a class="btn" href="Sangkeun_Kim_Resume.pdf">Resume (PDF)</a>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  <section id="about">
+    <h2>About</h2>
+    <p>I’m a developer based in Richmond Hill, Ontario, with four years of professional experience building enterprise web applications in Seoul and a Bachelor of Computer Science from Algoma University (2026).</p>
+    <p>My strongest work sits where data meets the browser: dashboards, charts and map interfaces backed by REST APIs and SQL databases. I’ve also built cross-platform mobile apps from web code, and I’ve spent the years since 2018 leading a team in customer-facing operations, which taught me to communicate clearly and stay dependable under pressure.</p>
+    <p>I use AI coding tools every day and check their output against primary documentation. The night before one Cordova app launch, an iOS patch broke the app. I found the updated platform documentation and fixed the bug before delivery.</p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <article class="proj">
+      <h3>Forestry Korea: maps and charts</h3>
+      <p>A web application that drew changing points on maps from the client’s back-end API and turned raw data into graphs. It tracked more than 500 data points.</p>
+      <ul class="tags"><li>CesiumJS</li><li>GeoServer</li><li>jQuery</li><li>Bootstrap</li><li>Chart libraries</li></ul>
+    </article>
+    <article class="proj">
+      <h3>Hansol PNS: enterprise mobile app</h3>
+      <p>An Angular front end packaged as a mobile web application for Android and iOS, built for an enterprise client.</p>
+      <ul class="tags"><li>Angular</li><li>Ionic</li><li>Cordova</li></ul>
+    </article>
+    <article class="proj">
+      <h3>LS Enterprise: tools and testing site</h3>
+      <p>An enterprise single page application with Highcharts data visualization, plus modular tools that client engineers could build on.</p>
+      <ul class="tags"><li>Angular</li><li>Highcharts</li><li>Node.js</li></ul>
+    </article>
+    <article class="proj">
+      <h3>Real-time analytics dashboard</h3>
+      <p>A live dashboard that charted incoming data, with a Node.js server saving it to a database.</p>
+      <ul class="tags"><li>Node.js</li><li>D3.js</li><li>Highcharts</li></ul>
+    </article>
+    <article class="proj">
+      <h3>Korea Fire Facility Association: internal site</h3>
+      <p>An internal enterprise website with forms and records stored in an Oracle database, documented with UML and SQL table flowcharts.</p>
+      <ul class="tags"><li>Java MVC</li><li>jQuery</li><li>Oracle</li></ul>
+    </article>
+    <p class="muted">More code is on <a href="https://github.com/blademeld">my GitHub profile</a>.</p>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+    <div class="job">
+      <div class="when">Sep 2018 – Present</div>
+      <div>
+        <h3>Associate Lead with Keys, PetSmart</h3>
+        <ul>
+          <li>Lead an operations team of three to six, keeping service quality and safety protocols on track.</li>
+          <li>Track and report issues with bookings, services and products, with accurate documentation.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="job">
+      <div class="when">Aug 2015 – Dec 2017</div>
+      <div>
+        <h3>Software Developer, LinkIt (Seoul)</h3>
+        <ul>
+          <li>Built Angular single page applications with Highcharts for enterprise clients.</li>
+          <li>Developed geospatial mapping tools with CesiumJS and GeoServer.</li>
+          <li>Converted web applications into mobile apps with Ionic and Cordova.</li>
+          <li>Worked with client engineers across time zones and managed projects in Git.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="job">
+      <div class="when">Oct 2013 – Jul 2015</div>
+      <div>
+        <h3>Web Programmer, SysoIt (Seoul)</h3>
+        <ul>
+          <li>Built Java servlet websites with an Oracle Database back end.</li>
+          <li>Wrote product manuals with UML and SQL table flowcharts.</li>
+          <li>Managed projects in SVN and set up programming environments for clients.</li>
+        </ul>
+      </div>
+    </div>
+    <p class="muted" style="margin-top:1.25rem">Education: Bachelor of Computer Science, Algoma University, Sep 2024 – Oct 2026. Coursework in data structures, algorithms, databases, web security, CI/CD and TypeScript.</p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <dl class="skills">
+      <dt>Front end</dt><dd>JavaScript (ES6+), TypeScript, Angular, HTML5, CSS3, jQuery, Bootstrap</dd>
+      <dt>Data and maps</dt><dd>D3.js, Highcharts, CesiumJS, GeoServer</dd>
+      <dt>Back end</dt><dd>Node.js/Express, Spring Boot (Java), REST APIs, JWT authentication</dd>
+      <dt>Databases</dt><dd>SQL (Oracle, MySQL, PostgreSQL, MSSQL), NoSQL</dd>
+      <dt>Practices</dt><dd>Git/GitHub, Linux, SVN, CI/CD, unit testing, Agile and Waterfall</dd>
+      <dt>Languages</dt><dd>English and Korean</dd>
+    </dl>
+  </section>
+
+  <section id="contact" style="border-bottom:0">
+    <h2>Contact</h2>
+    <p>I’m open to software developer roles in the Greater Toronto Area. The quickest way to reach me is by email at <a href="mailto:arbiternal@gmail.com">arbiternal@gmail.com</a>, or find me on <a href="https://linkedin.com/in/sangkeun-kim">LinkedIn</a>.</p>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">© 2026 Sangkeun Kim</div>
+</footer>
+</body>
+</html>
